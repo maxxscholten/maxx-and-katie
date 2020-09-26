@@ -1,0 +1,264 @@
+:root {
+  --orange: #E46225;
+  --cream: #F9F5F1;
+  --textColor: #3C3938;
+}
+
+a:hover {
+  color: var(--orange);
+  border-color: var(--orange)
+}
+
+
+
+h2.section-title {
+  font-family: 'Kaoly';
+  font-size: 115px;
+  text-align: center;
+  line-height: 85px;
+  color: var(--orange);
+  margin-bottom: 75px;
+}
+
+
+h2.section-title span.small {
+  font-family: 'Lora';
+  font-size: 50px;
+  text-align: center;
+  color: var(--orange);
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-bottom: 20px;
+}
+
+p.large {
+  text-align: center;
+  margin: 0 auto;
+}
+
+p.small {
+  font-size: 12pt;
+  text-align: center;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#menu>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Home */
+#home {
+  background: var(--cream);
+  border: 12px solid var(--orange);
+  padding: 75px 0 35px 0;
+  margin-top: 50px;
+  position: relative;
+}
+
+#home h1 {
+  font-size: 145px;
+  text-align: center;
+  line-height: 105px;
+  color: var(--orange);
+}
+
+#home h1 span {
+  font-size: 70px;
+  font-family: "Lora";
+  display: block;
+}
+
+#home #home-title-left {
+  top: 118px;
+  left: 241px;
+  position: absolute;
+  background-image: url('../../images/home-title-left.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 63px;
+  width: 46px;
+}
+
+#home #home-title-right {
+  top: 258px;
+  right: 261px;
+  position: absolute;
+  background-image: url('../../images/home-title-right.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 54px;
+  width: 54px;
+}
+
+#home #home-left {
+  top: -37px;
+  left: -200px;
+  position: absolute;
+  background-image: url('../../images/home-left.svg');
+  background-repeat: no-repeat;
+  background-size: auto 702px;
+  height: 688px;
+  width: 460px;
+  z-index: 3;
+}
+
+#home #home-right {
+  top: -83px;
+  right: -150px;
+  position: absolute;
+  background-image: url('../../images/home-right.svg');
+  background-repeat: no-repeat;
+  background-size: auto 746px;
+  height: 758px;
+  width: 460px;
+  z-index: 3;
+}
+
+#home .date {
+  color: var(--orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+  margin-left: -10px;
+}
+
+#home .date h3 {
+  font-size: 34px;
+  font-family: 'Kaoly';
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#home .date h3 span {
+  font-size: 76px;
+  font-family: 'Kaoly';
+  padding: 0 30px;
+}
+
+#home .date h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.flower-spacer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.flower-spacer>div {
+  width: 292px;
+  height: 81px;
+  background-image: url('../../images/home-wedding-spacer.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+#wedding {
+  padding-top: 80px;
+}
+
+#wedding p.small {
+  margin-top: 50px;
+}
+
+#wedding .location {
+  margin-top: 50px;
+  background: var(--cream);
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+#wedding .location .text {
+  padding-right: 50px;
+}
+
+#wedding .location p.small {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#wedding .location p.large {
+  text-align: left;
+  margin: 0 0 30px 0;
+}
+
+#wedding-bride-and-groom-spacer {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  margin-bottom: -280px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 2;
+}
+
+#wedding-bride-and-groom-spacer>div {
+  width: 940px;
+  height: 378px;
+  background-image: url('../../images/wedding-bride-and-groom-spacer.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+
+#bride-and-groom {
+  background: var(--cream);
+  border: 12px solid var(--orange);
+  padding: 75px 50px 35px;
+  margin-top: 50px;
+  position: relative;
+}
+
+#bride-and-groom h2.section-title {
+  line-height: 120px;
+  margin-bottom: 40px;
+}
+
+#bride-and-groom h2.section-title span {
+  margin-bottom: -10px;
+  margin-top: -20px;
+}
+
+#bride-and-groom .photos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 120%;
+  margin-left: -18%;
+}
+
+#bride-and-groom .photos img {
+  margin: 0 20px;
+  width: 25%;
+}
+
+#registry {
+  padding-top: 80px;
+}
+
+#registry h2.section-title {
+  margin-bottom: 100px;
+}
