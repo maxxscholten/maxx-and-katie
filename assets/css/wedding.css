@@ -256,18 +256,34 @@ p.small {
   margin-top: -20px;
 }
 
-#bride-and-groom .photos {
+#bride-and-groom .owl-carousel {
   margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  width: 120%;
-  margin-left: -18%;
+  position: relative;
 }
 
-#bride-and-groom .photos img {
-  margin: 0 20px;
-  width: 25%;
+
+#bride-and-groom .owl-carousel div.photo {
+  height: 400px;
+  width: 100%;
+}
+
+#bride-and-groom .owl-carousel .owl-nav button.owl-next,
+#bride-and-groom .owl-carousel .owl-nav button.owl-prev,
+#bride-and-groom .owl-carousel button.owl-dot,
+#bride-and-groom .owl-carousel .owl-nav button.owl-next:focus,
+#bride-and-groom .owl-carousel .owl-nav button.owl-prev:focus,
+#bride-and-groom .owl-carousel button.owl-dot:focus{
+  height: auto;
+  border: 0;
+  box-shadow: none !important;
+  text-align: center;
+  font-size: 12pt;
+  outline: none !important;
+}
+
+#bride-and-groom .owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+  color: var(--orange);
 }
 
 #registry {
@@ -318,6 +334,20 @@ p.small {
   #wedding .location #map {
     width: 400px;
   }
+
+  #photos1-1 {
+    left: 0px;
+    height: 200px;
+    margin-left: 30px;
+  }
+
+  #photos1-2 {
+    left: 0px;
+    top: 30px;
+    height: 300px;
+  }
+
+
 }
 
 @media screen and (max-width: 900px) {
@@ -399,6 +429,11 @@ p.small {
     background-size: auto 100%;
     background-position: 50% 50%;
   }
+
+  #bride-and-groom .photos {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -546,7 +581,6 @@ p.small {
   #bride-and-groom .photos {
     margin-top: 30px;
     margin-bottom: 30px;
-    height: 250px;
   }
 
   #registry {

@@ -8,6 +8,23 @@
   var $window = $(window),
     $body = $('body');
 
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  });
+
   // Breakpoints.
   breakpoints({
     xlarge: ['1281px', '1680px'],

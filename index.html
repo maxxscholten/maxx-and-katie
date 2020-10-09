@@ -12,6 +12,13 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/wedding.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -24,10 +31,10 @@
       <nav id="menu">
         <div class="menu-wrapper">
           <div class="menu-items">
-            <a href="index.html#wedding">Wedding</a>
-            <a href="index.html#bride-and-groom">About</a>
-            <a href="index.html#registry">Registry</a>
-            <a href="index.html#contact">Contact</a>
+            <a href="#wedding">Wedding</a>
+            <a href="#bride-and-groom">About</a>
+            <a href="#registry">Registry</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </nav>
@@ -112,31 +119,22 @@
             </h2>
 
             <p class="large">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              sapien odio, posuere sit amet ullamcorper vitae, maximus eget
-              libero. Maecenas non nulla eros.
+              Katie and Maxx met in highschool in Grapevine, Texas in 2006; studied at the University of Texas, Austin, and now live in Brooklyn, New York with one fat pug and a frog.
             </p>
-            <div class="photos">
-              <img src="http://placehold.it/329x500.png" />
-              <img src="http://placehold.it/329x500.png" />
-              <img src="http://placehold.it/329x500.png" />
-              <img src="http://placehold.it/329x500.png" />
+            <div class="owl-carousel owl-theme">
+              <div class="photo" style="background: url(./images/homecoming.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+              <div class="photo" style="background: url(./images/prom.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+              <div class="photo" style="background: url(./images/quesodillos.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+
+              <div class="photo" style="background: url(./images/vicks-wedding.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+              <div class="photo" style="background: url(./images/las-vegas.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+              <div class="photo" style="background: url(./images/jonathans-wedding.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+              <div class="photo" style="background: url(./images/ross-and-rachel.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+              <div class="photo" style="background: url(./images/penguins.jpg) 50% 50% no-repeat; background-size: cover;"></div>
+
             </div>
-            <p class="small">
-              Sed efficitur metus mauris, in laoreet leo accumsan vitae. Morbi
-              ante arcu, tempus id fringilla eget, consectetur non arcu. Duis
-              enim erat, sollicitudin ac erat quis, malesuada mattis nisi. Sed
-              dictum sem id elit ultricies, et blandit est pulvinar. Nam maximus
-              pulvinar molestie. Nulla lobortis enim nec laoreet elementum.
-            </p>
-            <p class="small">
-              Vestibulum velit sem, pretium vitae convallis eu, venenatis vitae
-              arcu. Donec porta id sapien vel varius. Curabitur ligula sem,
-              imperdiet vel bibendum volutpat, ultricies in odio. Vestibulum
-              ante ipsum primis in faucibus orci luctus et ultrices posuere
-              cubilia curae; Suspendisse id dignissim enim. Etiam a fringilla
-              nisl.
-            </p>
+
+
           </section>
 
           <div class="flower-spacer">
@@ -177,7 +175,18 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180152887-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-180152887-1');
+    </script>
   </body>
 </html>
