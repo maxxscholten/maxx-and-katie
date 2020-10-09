@@ -1,15 +1,13 @@
 :root {
-  --orange: #E46225;
-  --cream: #F9F5F1;
-  --textColor: #3C3938;
+  --orange: #e46225;
+  --cream: #f9f5f1;
+  --textColor: #3c3938;
 }
 
 a:hover {
   color: var(--orange);
-  border-color: var(--orange)
+  border-color: var(--orange);
 }
-
-
 
 h2.section-title {
   font-family: 'Kaoly';
@@ -19,7 +17,6 @@ h2.section-title {
   color: var(--orange);
   margin-bottom: 75px;
 }
-
 
 h2.section-title span.small {
   font-family: 'Lora';
@@ -53,12 +50,22 @@ p.small {
   background: rgba(255, 255, 255, 0.95);
 }
 
-#menu>div {
+#menu .menu-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+
+#menu .menu-wrapper .menu-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 600px;
+  font-size: 12pt;
 }
 
 /* Home */
@@ -66,7 +73,7 @@ p.small {
   background: var(--cream);
   border: 12px solid var(--orange);
   padding: 75px 0 35px 0;
-  margin-top: 50px;
+  margin-top: 100px;
   position: relative;
 }
 
@@ -79,7 +86,7 @@ p.small {
 
 #home h1 span {
   font-size: 70px;
-  font-family: "Lora";
+  font-family: 'Lora';
   display: block;
 }
 
@@ -118,13 +125,13 @@ p.small {
 }
 
 #home #home-right {
-  top: -83px;
+  top: -135px;
   right: -150px;
   position: absolute;
-  background-image: url('../../images/home-right.svg');
+  background-image: url(../../images/home-right.svg);
   background-repeat: no-repeat;
-  background-size: auto 746px;
-  height: 758px;
+  background-size: auto 806px;
+  height: 768px;
   width: 460px;
   z-index: 3;
 }
@@ -145,7 +152,7 @@ p.small {
   font-family: 'Kaoly';
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #home .date h3 span {
@@ -166,7 +173,7 @@ p.small {
   margin-top: 100px;
 }
 
-.flower-spacer>div {
+.flower-spacer > div {
   width: 292px;
   height: 81px;
   background-image: url('../../images/home-wedding-spacer.svg');
@@ -204,6 +211,14 @@ p.small {
   margin: 0 0 30px 0;
 }
 
+#wedding .location #map {
+  width: 666px;
+  height: 100%;
+}
+#wedding .location #map-mobile {
+  display: none;
+}
+
 #wedding-bride-and-groom-spacer {
   display: flex;
   justify-content: center;
@@ -214,7 +229,7 @@ p.small {
   z-index: 2;
 }
 
-#wedding-bride-and-groom-spacer>div {
+#wedding-bride-and-groom-spacer > div {
   width: 940px;
   height: 378px;
   background-image: url('../../images/wedding-bride-and-groom-spacer.svg');
@@ -222,12 +237,12 @@ p.small {
   background-size: auto 100%;
 }
 
-
 #bride-and-groom {
   background: var(--cream);
   border: 12px solid var(--orange);
   padding: 75px 50px 35px;
   margin-top: 50px;
+  margin-bottom: 150px;
   position: relative;
 }
 
@@ -256,9 +271,328 @@ p.small {
 }
 
 #registry {
-  padding-top: 80px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 #registry h2.section-title {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+#contact {
+  margin-top: 130px;
+}
+
+#contact .contact-box {
+  margin-top: 50px;
+  background: var(--cream);
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contact-box p.small {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #wrapper > * > .inner {
+    max-width: 900px;
+  }
+  #home #home-right {
+    right: -255px;
+  }
+  #home #home-left {
+    left: -243px;
+  }
+  #home #home-title-left {
+    left: 107px;
+  }
+  #home #home-title-right {
+    right: 131px;
+  }
+  #wedding .location #map {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 12pt;
+  }
+  #home h1 {
+    font-size: 115px;
+    line-height: 85px;
+  }
+  #home #home-left {
+    top: -34px;
+    left: -222px;
+    background-size: auto 636px;
+    height: 616px;
+    width: 410px;
+  }
+
+  #home #home-right {
+    right: -265px;
+    top: -83px;
+    background-size: auto 684px;
+    height: 661px;
+  }
+  #home #home-title-left {
+    left: 91px;
+  }
+  #home #home-title-right {
+    right: 101px;
+    top: 218px;
+  }
+  #home .date h3 {
+    font-size: 30px;
+  }
+  #home .date h3 span {
+    font-size: 66px;
+  }
+  #home .date h4 {
+    margin-bottom: 15px;
+  }
+  h2.section-title {
+    font-size: 75px;
+    margin-bottom: 30px;
+  }
+  h2.section-title span.small {
+    font-size: 30px;
+    margin-bottom: 0;
+    letter-spacing: 15px;
+  }
+
+  #wedding-bride-and-groom-spacer {
+    margin-top: -40px;
+  }
+
+  #wedding-bride-and-groom-spacer > div {
+    width: 100%;
+    height: 280px;
+    background-size: 100% auto;
+  }
+  #bride-and-groom h2.section-title {
+    line-height: 85px;
+    margin-bottom: 30px;
+  }
+  #bride-and-groom .photos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .flower-spacer {
+    margin-top: 80px;
+  }
+
+  .flower-spacer > div {
+    width: 100%;
+    height: 61px;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #menu .menu-items {
+    display: none;
+  }
+  #wrapper > * > .inner {
+    padding: 0 1em;
+  }
+  #home {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    min-height: 400px;
+  }
+  #home h1 {
+    font-size: 75px;
+    line-height: 65px;
+    position: relative;
+    z-index: 2;
+  }
+  #home h1 span {
+    font-size: 45px;
+  }
+  #home #home-left {
+    top: -40px;
+    left: 0px;
+    background-size: 210% 101vh;
+    width: 100vw;
+    height: calc(100vh + 40px);
+    z-index: 2;
+    background-position: 85% 0;
+  }
+
+  #home #home-right {
+    top: -40px;
+    right: -40px;
+    background-size: 200% 101vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-position: 0 0;
+  }
+  #home #home-title-left {
+    left: 6vw;
+    top: calc(38vh - 50px);
+    width: 30px;
+    background-size: 100% auto;
+  }
+  #home #home-title-right {
+    right: 7vw;
+    top: calc(19vh - 50px);
+    width: 30px;
+    background-size: 100% auto;
+  }
+
+  #home .date {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  #home .date h3 {
+    font-size: 22px;
+    flex-direction: column;
+    line-height: 43px;
+  }
+  #home .date h3 span {
+    font-size: 46px;
+  }
+  #home .date h4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  h2.section-title {
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: 20px;
+  }
+  h2.section-title span.small {
+    font-size: 25px;
+    margin-bottom: 0;
+    letter-spacing: 13px;
+  }
+
+  #wedding {
+    padding-top: 0;
+  }
+  #wedding p.small {
+    margin-top: 30px;
+  }
+
+  #wedding .location {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  #wedding .location .text {
+    padding: 0;
+  }
+
+  #wedding .location #map {
+    display: none;
+  }
+  #wedding .location #map-mobile {
+    display: block;
+    height: 350px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-bottom: -30px;
+  }
+
+  #wedding-bride-and-groom-spacer {
+    margin-top: -50px;
+    height: 450px;
+    width: 135%;
+  }
+
+  #wedding-bride-and-groom-spacer > div {
+    width: 100%;
+    height: 280px;
+    background-size: 100% auto;
+  }
+
+  #bride-and-groom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+  }
+
+  #bride-and-groom h2.section-title {
+    line-height: 65px;
+    margin-bottom: 30px;
+  }
+  #bride-and-groom .photos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 250px;
+  }
+
+  #registry {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .flower-spacer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .flower-spacer.home {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .flower-spacer > div {
+    width: 100%;
+    height: 61px;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #home h1 {
+    font-size: 55px;
+    line-height: 55px;
+    position: relative;
+    z-index: 2;
+  }
+  #home h1 span {
+    font-size: 35px;
+  }
+  h2.section-title {
+    font-size: 45px;
+  }
+  h2.section-title span.small {
+    font-size: 20px;
+  }
+  #bride-and-groom h2.section-title {
+    line-height: 55px;
+  }
 }

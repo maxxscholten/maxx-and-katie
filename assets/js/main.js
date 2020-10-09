@@ -26,7 +26,13 @@
   });
 
   // Touch?
-  if (browser.mobile) $body.addClass('is-touch');
+  if (browser.mobile) {
+    $body.addClass('is-touch');
+  }
+
+  if (window.innerWidth < 768) {
+    $('#home').css('height', `${window.innerHeight - 50}px`);
+  }
 
   // Forms.
   var $form = $('form');
@@ -69,6 +75,9 @@
     if (browser.name == 'ie' || browser.mobile)
       $this.css('max-height', '10em').css('overflow-y', 'auto');
   });
+
+  console.log(window.screen.availHeight);
+  console.log(window.innerHeight);
 
   // Menu.
   /*var $menu = $('#menu');
